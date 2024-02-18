@@ -6,7 +6,7 @@ let choosenSeat = 0;
 
 const seatInfo = document.getElementById("seat-info");
 
-const coupnInput = document.getElementById("coupon-input");
+const couponInput = document.getElementById("coupon-input");
 const couponApplyBtn = document.getElementById("coupon-apply-btn");
 
 const totalPriceEle = document.getElementById("total-price");
@@ -52,12 +52,12 @@ for (const seat of seats) {
                     <td id = 'fare'>550</td>
                 </tr>`;
 
-        // enable/diasble the discount section
+        // enable/disable the discount section
         if (maxCapacity == 4) {
-          coupnInput.removeAttribute("disabled");
+          couponInput.removeAttribute("disabled");
           couponApplyBtn.removeAttribute("disabled");
         } else {
-          coupnInput.setAttribute("disabled", "");
+          couponInput.setAttribute("disabled", "");
           couponApplyBtn.setAttribute("disabled", "");
         }
 
@@ -70,7 +70,7 @@ for (const seat of seats) {
         //  click event
         couponApplyBtn.onclick = function () {
           // NEW15
-          if (coupnInput.value === "NEW15") {
+          if (couponInput.value === "NEW15") {
             document
               .getElementById("discount-container")
               .classList.remove("hidden");
@@ -88,7 +88,7 @@ for (const seat of seats) {
           }
 
           // couple 20
-          else if (coupnInput.value === "Couple 20") {
+          else if (couponInput.value === "Couple 20") {
             document
               .getElementById("discount-container")
               .classList.remove("hidden");
@@ -108,7 +108,7 @@ for (const seat of seats) {
           // error
           else {
             alert("You have put an incorrect coupon");
-            coupnInput.value = "";
+            couponInput.value = "";
           }
         };
 
@@ -161,10 +161,10 @@ for (const seat of seats) {
 
       // enable/disable the discount
       if (maxCapacity == 4) {
-        coupnInput.removeAttribute("disabled");
+        couponInput.removeAttribute("disabled");
         couponApplyBtn.removeAttribute("disabled");
       } else {
-        coupnInput.setAttribute("disabled", "");
+        couponInput.setAttribute("disabled", "");
         couponApplyBtn.setAttribute("disabled", "");
         document.getElementById("nextBtn").setAttribute("disabled", "");
 
