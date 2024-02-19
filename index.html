@@ -85,14 +85,14 @@
             class="banner-content p-5 md:p-20 flex items-center justify-center flex-col w-full lg:w-4/5 text-center gap-4"
           >
             <h1
-              class="text-4xl md:text-6xl font-extrabold text-white leading-8"
+              class="text-4xl md:text-5xl font-bold text-white leading-8"
             >
               End-to-End Travel with <br /><span class="text-[var(--base)]"
                 >P Paribahan</span
               >
             </h1>
-            <p class="font-inter text-base md:text-[18px] text-white leading-8">
-              Simplify travel: easy bus booking, seamless reservations, secure transactions, and reliable scheduling for stress-free journeys.
+            <p class="font-inter text-base md:text-[18px] text-white leading-8 text-neutral-content">
+              Simplify travel easy bus booking, seamless reservations, secure transactions, <br> and reliable scheduling for stress-free journeys.
             </p>
             <button
               class="btn bg-[var(--base)] text-xl font-bold text-black flex w-max h-max px-8 py-5 border-0"
@@ -102,6 +102,32 @@
           </div>
         </div>
       </div>
+      <div class=" flex lg:flex-row flex-col  gap-9 justify-center w-[400px] lg:w-full translate-y-[-60px]">
+        <!-- hero card-1 -->
+   <div class="w-72 h-32 flex gap-4 border-b-2 border-[#1DD100] rounded-3xl justify-center items-center bg-white translate-x-16 lg:translate-x-0">
+   <div><img src="./resources/images/people.png"></div>
+   <div>
+       <h1 class="raleway text-4xl font-extrabold">500K+</h1>
+       <p class="p">Registered users</p>
+   </div>
+</div>
+        <!-- hero card-2 -->
+   <div class="w-72 h-32 flex gap-4 border-b-2 border-[#1DD100] rounded-3xl justify-center items-center  bg-white translate-x-16 lg:translate-x-0">
+   <div><img src="./resources/images/ticket-cupon.png"></div>
+   <div>
+       <h1 class="raleway text-4xl font-extrabold">1.7 lacks</h1>
+       <p class="p">Tickets sold</p>
+   </div>
+</div>
+        <!-- hero card-2 -->
+   <div class="w-72 h-32 flex gap-4 border-b-2 border-[#1DD100] rounded-3xl justify-center items-center  bg-white translate-x-16 lg:translate-x-0">
+   <div><img src="./resources/images/stoppage.png"></div>
+   <div>
+       <h1 class="raleway text-4xl font-extrabold">80K+</h1>
+       <p class="p">Rental partners</p>
+   </div>
+</div>
+</div>
     </header>
     <main>
       <!-- Coupon container -->
@@ -259,7 +285,7 @@
                          <!-- head -->
                   <thead class="text-black text-xs md:text-base font-medium border-b-2 border-dashed">
                           <tr>
-                            <th>Seat <span id="seat-choosen"
+                            <th>Seat <span id="seat-choose"
                                class="bg-[var(--base)] text-xs p-1 mx-1 rounded-s">0</span></th>
                                 <th>Class</th>
                                   <th>Price</th>
@@ -286,7 +312,7 @@
 
                               <div id="discount-input-container"
                                   class="coupon mx-auto flex flex-col md:flex-row gap-5 justify-center my-3 box-border px-1 text-xs md:text-base">
-                                  <input type="text" id="coupon-input" class="p-3 border-2 rounded-md" disabled>
+                                  <input type="text" id="coupon-input" placeholder="Have any coupon?" class="p-3 border-2 rounded-md" disabled>
                                   <button class="btn bg-[var(--base)] text-xs md:text-base" id="coupon-apply-btn"
                                       disabled> Apply</button>
                               </div>
@@ -303,17 +329,17 @@
                       <div class="passenger-details px-1 box-border my-5">
                           <div class="my-3">
                               <p class="font-semibold my-3 text-sm md:text-base">Passenger Name*</p>
-                              <input type="text" id="namePassenger" class="w-full box-border p-3 rounded-md border-2">
+                              <input type="text" id="namePassenger" placeholder="Enter your name" class="w-full box-border p-3 rounded-md border-2">
                           </div>
 
                           <div class="my-3">
                               <p class="font-semibold my-3 text-sm md:text-base">Phone Number*</p>
-                              <input type="text" id="number" class="w-full box-border p-3 rounded-md border-2">
+                              <input type="text" id="number" placeholder="Enter your phone number" class="w-full box-border p-3 rounded-md border-2">
                           </div>
 
                           <div class="my-3">
                               <p class="font-semibold my-3 text-sm md:text-base">Email*</p>
-                              <input type="text" id="email" class="w-full box-border p-3 rounded-md border-2">
+                              <input type="text" id="email" placeholder="Enter your email id" class="w-full box-border p-3 rounded-md border-2">
                           </div>
                       </div>
 

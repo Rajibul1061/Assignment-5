@@ -1,8 +1,8 @@
 const seatLeft = document.getElementById("seat-left");
 let totalSeats = 40;
 
-const seatChoosen = document.getElementById("seat-choosen");
-let choosenSeat = 0;
+const seatChoose = document.getElementById("seat-choose");
+let chooseSeat = 0;
 
 const seatInfo = document.getElementById("seat-info");
 
@@ -41,9 +41,9 @@ for (const seat of seats) {
         totalSeats--;
         seatLeft.innerText = totalSeats;
 
-        // increase choosen seat no
-        choosenSeat++;
-        seatChoosen.innerText = choosenSeat;
+        // increase choose seat no
+        chooseSeat++;
+        seatChoose.innerText = chooseSeat;
 
         // add the seat
         seatInfo.innerHTML += `<tr class='${seatNumber} , seat-information'>
@@ -137,8 +137,8 @@ for (const seat of seats) {
       totalSeats++;
       seatLeft.innerText = totalSeats;
 
-      choosenSeat--;
-      seatChoosen.innerText = choosenSeat;
+      chooseSeat--;
+      seatChoose.innerText = chooseSeat;
 
       // remove the seat
       console.log(seatInfo);
